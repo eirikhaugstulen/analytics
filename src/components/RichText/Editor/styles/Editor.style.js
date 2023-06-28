@@ -35,7 +35,7 @@ export const mainClasses = css`
 
     .textarea:focus {
         outline: none;
-        box-shadow: 0 0 0 3px ${theme.focus};
+        box-shadow: 0 0 0 3px inset ${theme.focus};
     }
 
     .textarea:disabled {
