@@ -192,7 +192,7 @@ Toolbar.propTypes = {
 
 export const Editor = forwardRef(
     (
-        { value, disabled, inputPlaceholder, onChange, errorText },
+        { value, disabled, inputHeight, inputPlaceholder, onChange, errorText },
         externalRef
     ) => {
         const [previewMode, setPreviewMode] = useState(false)
@@ -244,6 +244,7 @@ export const Editor = forwardRef(
                                 ref={textareaRef}
                                 placeholder={inputPlaceholder}
                                 disabled={disabled}
+                                rows={inputHeight}
                                 value={value}
                                 onChange={(event) =>
                                     onChange(event.target.value)
@@ -268,5 +269,6 @@ Editor.propTypes = {
     onChange: PropTypes.func.isRequired,
     disabled: PropTypes.bool,
     errorText: PropTypes.string,
+    inputHeight: PropTypes.number,
     inputPlaceholder: PropTypes.string,
 }
