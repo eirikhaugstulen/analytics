@@ -13,8 +13,8 @@ import {
 } from '@dhis2/ui'
 import PropTypes from 'prop-types'
 import React, { forwardRef, useRef, useEffect, useState } from 'react'
-import { RichTextParser } from '../../../RichText/index.js'
-import { UserMentionWrapper } from '../UserMention/UserMentionWrapper.js'
+import { UserMentionWrapper } from '../../UserMention/UserMentionWrapper.js'
+import { Parser } from '../Parser/Parser.js'
 import {
     convertCtrlKey,
     insertMarkdown,
@@ -33,22 +33,22 @@ import {
     toolbarClasses,
     tooltipAnchorClasses,
     emojisPopoverClasses,
-} from './styles/RichTextEditor.style.js'
+} from './styles/Editor.style.js'
 
 const EmojisPopover = ({ onInsertMarkdown, onClose, reference }) => (
     <Popover reference={reference} onClickOutside={onClose}>
         <ul className="emojisList">
             <li onClick={() => onInsertMarkdown(EMOJI_SMILEY_FACE)}>
-                <RichTextParser>{emojis[EMOJI_SMILEY_FACE]}</RichTextParser>
+                <Parser>{emojis[EMOJI_SMILEY_FACE]}</Parser>
             </li>
             <li onClick={() => onInsertMarkdown(EMOJI_SAD_FACE)}>
-                <RichTextParser>{emojis[EMOJI_SAD_FACE]}</RichTextParser>
+                <Parser>{emojis[EMOJI_SAD_FACE]}</Parser>
             </li>
             <li onClick={() => onInsertMarkdown(EMOJI_THUMBS_UP)}>
-                <RichTextParser>{emojis[EMOJI_THUMBS_UP]}</RichTextParser>
+                <Parser>{emojis[EMOJI_THUMBS_UP]}</Parser>
             </li>
             <li onClick={() => onInsertMarkdown(EMOJI_THUMBS_DOWN)}>
-                <RichTextParser>{emojis[EMOJI_THUMBS_DOWN]}</RichTextParser>
+                <Parser>{emojis[EMOJI_THUMBS_DOWN]}</Parser>
             </li>
         </ul>
         <style jsx>{emojisPopoverClasses}</style>
@@ -190,7 +190,7 @@ Toolbar.propTypes = {
     disabled: PropTypes.bool,
 }
 
-export const RichTextEditor = forwardRef(
+export const Editor = forwardRef(
     (
         { value, disabled, inputPlaceholder, onChange, errorText },
         externalRef
@@ -231,7 +231,7 @@ export const RichTextEditor = forwardRef(
                 />
                 {previewMode ? (
                     <div className="preview">
-                        <RichTextParser>{value}</RichTextParser>
+                        <Parser>{value}</Parser>
                     </div>
                 ) : (
                     <Field error={!!errorText} validationText={errorText}>
@@ -261,9 +261,9 @@ export const RichTextEditor = forwardRef(
     }
 )
 
-RichTextEditor.displayName = 'RichTextEditor'
+Editor.displayName = 'Editor'
 
-RichTextEditor.propTypes = {
+Editor.propTypes = {
     value: PropTypes.string.isRequired,
     onChange: PropTypes.func.isRequired,
     disabled: PropTypes.bool,
