@@ -468,7 +468,7 @@ msgid "Type"
 msgstr "Soort"
 
 msgid "Clear filters"
-msgstr ""
+msgstr "Wis filters"
 
 msgid "{{firstItemIndex}}-{{lastItemIndex}} of {{totalNumberOfItems}}"
 msgstr ""
@@ -598,13 +598,13 @@ msgid "Nothing selected"
 msgstr ""
 
 msgid "User organisation unit"
-msgstr ""
+msgstr "Gebruikersorganisatie-eenheid"
 
 msgid "User sub-units"
-msgstr ""
+msgstr "Subeenheden van gebruikers"
 
 msgid "User sub-x2-units"
-msgstr ""
+msgstr "Gebruiker sub-x2-eenheden"
 
 msgid "Select a level"
 msgstr "Selecteer een niveau"
@@ -820,7 +820,7 @@ msgid "Days"
 msgstr "Dagen"
 
 msgid "Weeks"
-msgstr ""
+msgstr "Weken"
 
 msgid "Bi-weeks"
 msgstr ""
@@ -883,10 +883,10 @@ msgid "Filter"
 msgstr "Filter"
 
 msgid "Columns"
-msgstr ""
+msgstr "Kolommen"
 
 msgid "Rows"
-msgstr ""
+msgstr "Rijen"
 
 msgid "Points"
 msgstr ""
@@ -943,7 +943,7 @@ msgid "Loading data element groups"
 msgstr ""
 
 msgid "Data sets"
-msgstr ""
+msgstr "Gegevensreeksen"
 
 msgid "Data set"
 msgstr "Gegevensreeks"
@@ -1006,13 +1006,13 @@ msgid "Extra Small"
 msgstr ""
 
 msgid "Small"
-msgstr ""
+msgstr "Klein"
 
 msgid "Regular"
 msgstr ""
 
 msgid "Large"
-msgstr ""
+msgstr "Groot"
 
 msgid "Extra Large"
 msgstr ""
