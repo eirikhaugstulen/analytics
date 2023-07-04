@@ -53,7 +53,7 @@ export const InterpretationForm = ({
                         <Button
                             primary
                             small
-                            disabled={saveMutationInProgress}
+                            loading={saveMutationInProgress}
                             onClick={() => save({ interpretationText })}
                         >
                             {i18n.t('Post interpretation')}
