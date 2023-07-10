@@ -192,14 +192,25 @@ Toolbar.propTypes = {
 
 export const Editor = forwardRef(
     (
-        { value, disabled, inputHeight, inputPlaceholder, onChange, errorText },
+        {
+            value,
+            disabled,
+            inputHeight,
+            inputPlaceholder,
+            onChange,
+            errorText,
+            initialFocus,
+        },
         externalRef
     ) => {
         const [previewMode, setPreviewMode] = useState(false)
         const internalRef = useRef()
         const textareaRef = externalRef || internalRef
 
-        useEffect(() => textareaRef.current?.focus(), [textareaRef])
+        useEffect(
+            () => initialFocus && textareaRef.current?.focus(),
+            [initialFocus, textareaRef]
+        )
 
         return (
             <div
@@ -267,11 +278,16 @@ export const Editor = forwardRef(
 
 Editor.displayName = 'Editor'
 
+Editor.defaultProps = {
+    initialFocus: true,
+}
+
 Editor.propTypes = {
     value: PropTypes.string.isRequired,
     onChange: PropTypes.func.isRequired,
     disabled: PropTypes.bool,
     errorText: PropTypes.string,
+    initialFocus: PropTypes.bool,
     inputHeight: PropTypes.number,
     inputPlaceholder: PropTypes.string,
 }
