@@ -3,7 +3,7 @@ import {
     Button,
     Popover,
     Tooltip,
-    Field,
+    Help,
     IconAt24,
     IconFaceAdd24,
     IconLink24,
@@ -248,7 +248,7 @@ export const Editor = forwardRef(
                         <Parser>{value}</Parser>
                     </div>
                 ) : (
-                    <Field error={!!errorText} validationText={errorText}>
+                    <div className="edit">
                         <UserMentionWrapper
                             onUserSelect={onChange}
                             inputReference={textareaRef}
@@ -268,7 +268,10 @@ export const Editor = forwardRef(
                                 }
                             />
                         </UserMentionWrapper>
-                    </Field>
+                        {errorText && (
+                            <Help error={!!errorText}>{errorText}</Help>
+                        )}
+                    </div>
                 )}
                 <style jsx>{mainClasses}</style>
             </div>

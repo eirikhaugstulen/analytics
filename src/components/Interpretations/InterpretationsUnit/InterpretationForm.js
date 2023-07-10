@@ -42,7 +42,7 @@ export const InterpretationForm = ({
             dataTest="interpretation-form"
         >
             {showRichTextEditor ? (
-                <div>
+                <>
                     <RichTextEditor
                         disabled={saveMutationInProgress}
                         inputPlaceholder={inputPlaceholder}
@@ -70,7 +70,7 @@ export const InterpretationForm = ({
                             {i18n.t('Cancel')}
                         </Button>
                     </MessageButtonStrip>
-                </div>
+                </>
             ) : (
                 <Input
                     onFocus={() => setShowRichTextEditor(true)}
