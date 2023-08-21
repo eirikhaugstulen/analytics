@@ -1,3 +1,60 @@
+## [26.0.16](https://github.com/dhis2/analytics/compare/v26.0.15...v26.0.16) (2023-08-18)
+
+
+### Bug Fixes
+
+* avoid undefined in totals DHIS2-14511 ([#1552](https://github.com/dhis2/analytics/issues/1552)) ([d93bc3e](https://github.com/dhis2/analytics/commit/d93bc3e35c560aac7e64b3db8196032201686d3a))
+
+## [26.0.15](https://github.com/dhis2/analytics/compare/v26.0.14...v26.0.15) (2023-07-27)
+
+
+### Bug Fixes
+
+* **translations:** sync translations from transifex (master) ([1ab2bca](https://github.com/dhis2/analytics/commit/1ab2bcad7a0bf77f92d7ca838e759921b63dd3cc))
+
+## [26.0.14](https://github.com/dhis2/analytics/compare/v26.0.13...v26.0.14) (2023-07-13)
+
+
+### Bug Fixes
+
+* **translations:** sync translations from transifex (master) ([46de5ca](https://github.com/dhis2/analytics/commit/46de5ca48bafe36c858fbd1eda6032c8dfb2a5bd))
+
+## [26.0.13](https://github.com/dhis2/analytics/compare/v26.0.12...v26.0.13) (2023-07-08)
+
+
+### Bug Fixes
+
+* **translations:** sync translations from transifex (master) ([8e50465](https://github.com/dhis2/analytics/commit/8e5046501726bd6077f6b1c509471c9f99396bb1))
+
+## [26.0.12](https://github.com/dhis2/analytics/compare/v26.0.11...v26.0.12) (2023-07-07)
+
+
+### Bug Fixes
+
+* use correct access checks for showing interpretation reply, edit and delete buttons ([#1531](https://github.com/dhis2/analytics/issues/1531)) ([bf70361](https://github.com/dhis2/analytics/commit/bf703619cb773354e5665543fda36513f7edc6ce))
+
+## [26.0.11](https://github.com/dhis2/analytics/compare/v26.0.10...v26.0.11) (2023-07-06)
+
+
+### Bug Fixes
+
+* **translations:** sync translations from transifex (master) ([7a15f93](https://github.com/dhis2/analytics/commit/7a15f939180edd69b849bd0ab661024d924bc038))
+
+## [26.0.10](https://github.com/dhis2/analytics/compare/v26.0.9...v26.0.10) (2023-07-04)
+
+
+### Bug Fixes
+
+* **translations:** sync translations from transifex (master) ([96947a6](https://github.com/dhis2/analytics/commit/96947a62ed74433111d2eb4ddf2f3eafa734be6a))
+
+## [26.0.9](https://github.com/dhis2/analytics/compare/v26.0.8...v26.0.9) (2023-07-03)
+
+
+### Bug Fixes
+
+* use visual feedback on action buttons ([#1532](https://github.com/dhis2/analytics/issues/1532)) ([d6287c8](https://github.com/dhis2/analytics/commit/d6287c8cdb1162336f52259dab727724e8baed4b))
+* **translations:** sync translations from transifex (master) ([5dd498c](https://github.com/dhis2/analytics/commit/5dd498c846d6d4bedc0cf81b43cc3949339103bd))
+
 ## [26.0.8](https://github.com/dhis2/analytics/compare/v26.0.7...v26.0.8) (2023-06-29)
 
 
